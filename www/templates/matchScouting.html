@@ -1,0 +1,126 @@
+<ion-view title="Match Scouting" id="page5">
+  <ion-content padding="true" class="has-header">
+    <form id="matchScouting-form1" class="list">
+      <ion-item class="item-divider" id="matchScouting-list-item-divider1"> Informations générales</ion-item>
+      <label class="item item-input" id="matchScouting-input2" >
+        <span class="input-label">Match :</span>
+        <input type="tel" placeholder="" name="match" ng-model="qr.qr_match">
+      </label>
+      <label class="item item-input" id="matchScouting-input3">
+        <span class="input-label">Numéro d'équipe :</span>
+        <input type="tel" placeholder="" name="numero_equipe" ng-model="qr.qr_numero_equipe">
+      </label>
+      <ion-item class="item-divider" id="matchScouting-list-item-divider3"> Couleur de l'alliance</ion-item>
+      <ion-radio id="matchScouting-radio2" name="couleur_alliance" ng-model="qr.qr_couleur_alliance" value="Bleu">Bleu</ion-radio>
+      <ion-radio id="matchScouting-radio3" name="couleur_alliance" ng-model="qr.qr_couleur_alliance" value="Rouge">Rouge</ion-radio>
+      <div class="spacer" style="width: 320px; height: 29px;"></div>
+      <ion-item class="item-divider" id="matchScouting-list-item-divider4"> Partie automatique</ion-item>
+      <ion-item class="item-divider" id="matchScouting-list-item-divider5"> Cross baseline</ion-item>
+      <ion-radio id="matchScouting-radio4" name="reach_automatique" ng-model="qr.qr_reach_automatique" value="Oui">Oui</ion-radio>
+      <ion-radio id="matchScouting-radio5" name="reach_automatique" ng-model="qr.qr_reach_automatique" value="Non">Non</ion-radio>
+      <ion-item class="item-divider" id="matchScouting-list-item-divider6"> Boiler</ion-item>
+      <a class="item" ng-init="compteurH1 = 0" ng-click="compteurH1 = compteurH1 + 1" on-swipe-left="compteurH1 = compteurH1 - 1">
+        High Goals (réussi)
+        <span class="badge badge-dark">{{compteurH1}}</span>
+
+      </a>
+       <a class="item" ng-init="compteur_missH1 = 0" ng-click="compteur_missH1 = compteur_missH1 + 1" on-swipe-left="compteur_missH1 = compteur_missH1 - 1">
+        High Goals (manqué)
+        <span class="badge badge-dark">{{compteur_missH1}}</span>
+
+      </a>
+      <label class="item item-select" id="matchScouting-select4">
+        <span class="input-label">Low Goals</span>
+        <select name="low_goals_0" ng-model="qr.qr_low_goals_0">
+          <option></option>
+          <option>Environ 0-10</option>
+          <option>Environ 10-20</option>
+          <option>Environ 20-30</option>
+          <option>30 et plus</option>
+        </select>
+      </label>
+      <ion-item class="item-divider" id="matchScouting-list-item-divider7"> Gears</ion-item>
+      <ion-radio id="matchScouting-radio6" name="gears_automatique" ng-model="qr.qr_gears_automatique" value="Oui">Oui</ion-radio>
+      <ion-radio id="matchScouting-radio7" name="gears_automatique" ng-model="qr.qr_gears_automatique" value="Non">Non</ion-radio>
+      <ion-item class="item-divider" id="matchScouting-list-item-divider8"> Hoppers</ion-item>
+      <ion-checkbox id="matchScouting-checkbox3" class="checkbox-dark" value="Next to Boiler"  name="next_to_boiler" ng-model="qr.qr_next_to_boiler" >Next to boiler</ion-checkbox>
+      <ion-checkbox id="matchScouting-checkbox2" class="checkbox-dark" name="next_to_retrieval" ng-model="qr.qr_next_to_retrieval" value="Next to retrieval zone">Next to retrieval zone</ion-checkbox>
+      <ion-checkbox id="matchScouting-checkbox1" class="checkbox-dark" name="neutral_zone" ng-model="qr.qr_neutral_zone" value="Neutral zone">Neutral zone</ion-checkbox>
+      <div class="spacer" style="width: 320px; height: 29px;"></div>
+      <ion-item class="item-divider" id="matchScouting-list-item-divider9"> Partie télécommandée</ion-item>
+      <a class="item" ng-init="compteurH2 = 0" ng-click="compteurH2 = compteurH2 + 1" on-swipe-left="compteurH2 = compteurH2 - 1">
+        High Goals (réussi)
+        <span class="badge badge-dark">{{compteurH2}}</span>
+
+      </a>
+      <a class="item" ng-init="compteur_missH2 = 0" ng-click="compteur_missH2 = compteur_missH2 + 1" on-swipe-left="compteur_missH2 = compteur_missH2 - 1">
+        High Goals (manqué)
+        <span class="badge badge-dark">{{compteur_missH2}}</span>
+
+      </a>
+      <label class="item item-select" id="matchScouting-select5">
+        <span class="input-label">Low Goals</span>
+        <select name="low_goals" ng-model="qr.qr_low_goals">
+          <option></option>
+          <option>Environ 0-10</option>
+          <option>Environ 10-20</option>
+          <option>Environ 20-30</option>
+          <option>30 et plus</option>
+        </select>
+      </label>
+      <a class="item" ng-init="compteurGears = 0" ng-click="compteurGears = compteurGears + 1" on-swipe-left="compteurGears = compteurGears - 1">
+        Gears
+        <span class="badge badge-dark">{{compteurGears}}</span>
+
+      </a>
+      <ion-item class="item-divider" id="matchScouting-list-item-divider10"> Rope</ion-item>
+      <ion-radio id="matchScouting-radio8" name="rope" ng-model="qr.qr_rope" value="Oui">Oui</ion-radio>
+      <ion-radio id="matchScouting-radio9" name="rope" ng-model="qr.qr_rope" value="Non">Non</ion-radio>
+      <label class="item item-input" id="matchScouting-input7">
+        <span class="input-label">Temps pour monter (en secondes) : </span>
+        <input type="tel" placeholder="" name="temps_pour_monter" ng-model="qr.qr_temps_pour_monter">
+      </label>
+      <ion-item class="item-divider" id="matchScouting-list-item-divider11"> Stratégie</ion-item>
+      <a class="item" ng-init="compteurSprint = 0" ng-click="compteurSprint = compteurSprint + 1" on-swipe-left="compteurSprint = compteurSprint - 1">
+        Sprint
+        <span class="badge badge-dark">{{compteurSprint}}</span>
+
+      </a>
+      <a class="item" ng-init="compteurHoppers = 0" ng-click="compteurHoppers = compteurHoppers + 1" on-swipe-left="compteurHoppers = compteurHoppers - 1">
+        Hoppers
+        <span class="badge badge-dark">{{compteurHoppers}}</span>
+      </a>
+      <label class="item item-select" id="matchScouting-select2" name="couleur_alliance" ng-model="qr.qrcodeString1">
+        <span class="input-label">Défenseur</span>
+        <select name="defenseur" ng-model="qr.qr_defenseur">
+          <option></option>
+          <option>Tres bon</option>
+          <option>Correct</option>
+          <option>Moyen</option>
+          <option>Inefficace</option>
+          <option>Aucune défense</option>
+        </select>
+      </label>
+      <label class="item item-select" id="matchScouting-select3">
+        <span class="input-label">Mobilité</span>
+        <select name="mobilite" ng-model="qr.qr_mobilite">
+          <option>Tres bon</option>
+          <option>Correct</option>
+          <option>Moyen</option>
+          <option>Inefficace</option>
+        </select>
+      </label>
+      <label class="item item-input" id="matchScouting-textarea1" >
+        <span class="input-label">Commentaires (optionnel) :</span>
+        <input type="text" placeholder="" name="comment_optionnel" ng-model="qr.qr_comment_optionnel">
+      </label>
+      <label class="item item-input" id="matchScouting-input5">
+        <span class="input-label">Nom du Scout : </span>
+        <input type="text" placeholder=""  name="nom_scout" ng-model="qr.qr_nom_scout">
+      </label>
+      <button ng-click="qr= {}; compteurH1 = 0; compteur_missH1 = 0; compteurH2 = 0; compteur_missH2 = 0; compteurGears = 0; compteurHoppers = 0; compteurSprint = 0; " id="matchScouting-button2" class="button button-assertive  button-block button-outline">Réinitialiser</button>
+      <qr text="qr.qr_match+';'+qr.qr_numero_equipe+';'+qr.qr_couleur_alliance+';'+qr.qr_reach_automatique+';'+compteurH1+';'+compteur_missH1+';'+qr.qr_low_goals_0+';'+qr.qr_gears_automatique+';'+qr.qr_next_to_boiler+';'+qr.qr_next_to_retrieval+';'+qr.qr_neutral_zone+';'+compteurH2+';'+compteur_missH2+';'+qr.qr_low_goals+';'+compteurGears+';'+qr.qr_rope+';'+qr.qr_temps_pour_monter+';'+compteurSprint+';'+compteurHoppers+';'+qr.qr_defenseur+';'+qr.qr_mobilite+';'+qr.qr_comment_optionnel+';'+qr.qr_nom_scout" type-number="typeNumber" correction-level="correctionLevel" size="size" input-mode="inputMode" image="image"></qr>
+    </form>
+   
+  </ion-content>
+</ion-view>

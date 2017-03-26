@@ -1,0 +1,8 @@
+{
+  "name": "Tech-Scout",
+  "app_id": "ea26303a",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ]
+}

@@ -1,0 +1,106 @@
+<ion-view title="Pit Scouting" id="page6">
+  <ion-content padding="true" class="has-header">
+    <ion-list id="pitScouting-list1">
+      <ion-item class="item-divider" id="pitScouting-list-item-divider12"> Informations générales</ion-item>
+      <label class="item item-input" id="pitScouting-input4">
+        <span class="input-label">Numéro d'équipe : </span>
+        <input type="number" placeholder="" name="numero_equipe" ng-model="qr.qr_numero_equipe">
+      </label>
+    </ion-list>
+    <div class="spacer" style="height: 29px;"></div>
+    <ion-list id="pitScouting-list2">
+      <ion-item class="item-divider" id="pitScouting-list-item-divider13"> Fiche technique de l'équipe</ion-item>
+      <ion-item class="item-divider" id="pitScouting-list-item-divider14"> Driving base</ion-item>
+      <ion-radio id="pitScouting-radio10" name="drivingBase" ng-model="qr.qr_drivingBase" value="Swerve">Swerve</ion-radio>
+      <ion-radio id="pitScouting-radio11" name="drivingBase" ng-model="qr.qr_drivingBase" value="Tank">Tank</ion-radio>
+      <ion-radio id="pitScouting-radio12" name="drivingBase" ng-model="qr.qr_drivingBase" value=">H-Drive">H-Drive</ion-radio>
+      <ion-radio id="pitScouting-radio12" name="drivingBase" ng-model="qr.qr_drivingBase" value=">N/A">N/A</ion-radio>
+      <label class="item item-input" id="pitScouting-textarea4">
+        <span class="input-label">Autres :</span> 
+        <input type="text" placeholder="" name="drivingBase_autre" ng-model="qr.qr_drivingBase_autre">
+      </label>
+      <label class="item item-input" id="pitScouting-textarea10">
+        <span class="input-label">Commentaires (optionnel) : </span> 
+        <input type="text" placeholder="" name="comment_drivingBase" ng-model="qr.qr_comment_drivingBase">
+      </label>
+      <ion-item class="item-divider" id="pitScouting-list-item-divider15"> Wheels</ion-item>
+      <ion-checkbox id="pitScouting-checkbox4" class="checkbox-dark" name="wheels_1" ng-model="qr.qr_wheels_1" value="Pneumatic">Pneumatic</ion-checkbox>
+      <ion-checkbox id="pitScouting-checkbox5" class="checkbox-dark" name="wheels_2" ng-model="qr.qr_wheels_2" value="Chenilles">Chenilles</ion-checkbox>
+      <ion-checkbox id="pitScouting-checkbox6" class="checkbox-dark" name="wheels_3" ng-model="qr.qr_wheels_3" value="Mecanums">Mecanums</ion-checkbox>
+      <ion-checkbox id="pitScouting-checkbox7" class="checkbox-dark" name="wheels_4" ng-model="qr.qr_wheels_4" value="Omniwheel">Omniwheel</ion-checkbox>
+      <ion-checkbox id="pitScouting-checkbox8" class="checkbox-dark" name="wheels_5" ng-model="qr.qr_wheels_5" value="Autre grip">Autre grip</ion-checkbox>
+      <ion-checkbox id="pitScouting-radio21"   class="checkbox-dark" name="wheels_na" ng-model="qr.qr_wheels_na" value="N/A">N/A</ion-checkbox>
+      <label class="item item-input" id="pitScouting-textarea5">
+        <span class="input-label">Autres :</span>  
+        <input type="text" placeholder="" name="comment_wheels_autre" ng-model="qr.qr_comment_wheels_autre">
+      </label>
+      <label class="item item-input" id="pitScouting-textarea11">
+        <span class="input-label">Commentaires (optionnel) : </span>  
+        <input type="text" placeholder="" name="comment_wheels" ng-model="qr.qr_comment_wheels">
+      </label>
+      <ion-item class="item-divider" id="pitScouting-list-item-divider16">Lanceur</ion-item>
+      <ion-checkbox id="pitScouting-checkbox9" class="checkbox-dark" name="lanceur_1" ng-model="qr.qr_lanceur_1" value="High Goal">High Goal</ion-checkbox>
+      <ion-checkbox id="pitScouting-checkbox10" class="checkbox-dark" name="lanceur_2" ng-model="qr.qr_lanceur_2" value="Low Goal">Low Goal</ion-checkbox>
+      <ion-checkbox id="pitScouting-radio26" class="checkbox-dark "name="lanceur_na" ng-model="qr.qr_lanceur_na" value="N/A">N/A</ion-checkbox>
+      <label class="item item-input" id="pitScouting-textarea9">
+        <span class="input-label">Commentaires (optionnel) : </span>   
+        <input type="text" placeholder="" name="comment_lanceur" ng-model="qr.qr_comment_lanceur">
+      </label>
+      <ion-item class="item-divider" id="pitScouting-list-item-divider17"> Ramasseur</ion-item>
+      <ion-radio id="pitScouting-radio27" name="ramasseur" ng-model="qr.qr_ramasseur" value="Oui">Oui</ion-radio>
+      <ion-radio id="pitScouting-radio28" name="ramasseur" ng-model="qr.qr_ramasseur" value="Non">Non</ion-radio>
+      <ion-radio id="pitScouting-radio29" name="ramasseur" ng-model="qr.qr_ramasseur" value="N/A">N/A</ion-radio>
+      <label class="item item-input" id="pitScouting-textarea7">
+        <span class="input-label">Commentaires (optionnel) : </span>  
+        <input type="text" placeholder="" name="comment_ramasseur" ng-model="qr.qr_comment_ramasseur">
+      </label>
+      <ion-item class="item-divider" id="pitScouting-list-item-divider18"> Grimpeur</ion-item>
+      <ion-radio id="pitScouting-radio30" name="grimpeur" ng-model="qr.qr_grimpeur" value="Oui">Oui</ion-radio>
+      <ion-radio id="pitScouting-radio31" name="grimpeur" ng-model="qr.qr_grimpeur" value="Non">Non</ion-radio>
+      <label class="item item-input" id="pitScouting-textarea8">
+        <span class="input-label">Commentaires (optionnel) :</span>   
+        <input type="text" placeholder="" name="comment_grimpeur" ng-model="qr.qr_comment_grimpeur">
+      </label>
+      <ion-item class="item-divider" id="pitScouting-list-item-divider20"> Gears</ion-item>
+      <ion-radio id="pitScouting-radio32" name="gears_pit" ng-model="qr.qr_gears_pit" value="Oui">Oui</ion-radio>
+      <ion-radio id="pitScouting-radio33" name="gears_pit" ng-model="qr.qr_gears_pit" value="Non">Non</ion-radio>
+      <label class="item item-input" id="pitScouting-textarea12">
+        <span class="input-label">Commentaires (optionnel) :</span>    
+        <input type="text" placeholder="" name="comment_gears" ng-model="qr.qr_comment_gears">
+      </label>
+      <ion-item class="item-divider" id="pitScouting-list-item-divider21"> Commentaires en général</ion-item>
+      <label class="item item-input" id="pitScouting-textarea13">
+        <span class="input-label">Commentaires (optionnel) : </span>      
+        <input type="text" placeholder="" name="comment_general" ng-model="qr.qr_comment_general">
+      </label>
+      <ion-item class="item-divider" id="pitScouting-list-item-divider22"> Défenseur</ion-item>
+      <ion-radio id="pitScouting-radio34" name="defenseur" ng-model="qr.qr_defenseur" value="Non">Non</ion-radio>
+      <ion-radio id="pitScouting-radio35" name="defenseur" ng-model="qr.qr_defenseur" value="Un peu">Un peu</ion-radio>
+      <ion-radio id="pitScouting-radio36" name="defenseur" ng-model="qr.qr_defenseur" value="Moyen">Moyen</ion-radio>
+      <ion-radio id="pitScouting-radio37" name="defenseur" ng-model="qr.qr_defenseur" value="Beaucoup">Beaucoup</ion-radio>
+      <ion-radio id="pitScouting-radio34" name="defenseur" ng-model="qr.qr_sans_commentaire" value="Sans commentaire">Sans commentaires</ion-radio>
+      <ion-item class="item-divider" id="pitScouting-list-item-divider23"> Mode autonome</ion-item>
+      <label class="item item-input" id="pitScouting-textarea14">
+        <span class="input-label">Commentaires :</span>     
+        <input type="text" placeholder="" name="comment_mode_auton" ng-model="qr.qr_comment_mode_auton">
+      </label>
+      <ion-item class="item-divider" id="pitScouting-list-item-divider24"> Nombre maximal de balles</ion-item>
+      <label class="item item-input" id="pitScouting-input9">
+        <span class="input-label">Nombre : </span>
+        <input type="tel" placeholder="" name="nombre_balle" ng-model="qr.qr_nombre_balle">
+      </label>
+    </ion-list>
+    <div class="spacer" style="width: 300,012px; height: 25,9769px;"></div>
+    <ion-list id="pitScouting-list3">
+      <ion-item class="item-divider" id="pitScouting-list-item-divider19"> Nom du Scout</ion-item>
+    </ion-list>
+    <form id="pitScouting-form2" class="list">
+      <label class="item item-input" id="pitScouting-input6">
+        <span class="input-label">Nom : </span>
+        <input type="text" placeholder="" name="pit_nom_scout" ng-model="qr.qr_pit_nom_scout">
+      </label>
+    </form>
+    <button ng-click="qr= {}" id="matchScouting-button2" class="button button-assertive  button-block button-outline">Réinitialiser</button>
+    <qr text="qr.qr_numero_equipe+';'+qr.qr_drivingBase+';'+qr.qr_drivingBase_autre+';'+qr.qr_comment_drivingBase+';'+qr.qr_wheels_1+';'+qr.qr_wheels_2+';'+qr.qr_wheels_3+';'+qr.qr_wheels_4+';'+qr.qr_wheels_5+';'+qr.qr_wheels_na+';'+qr.qr_comment_wheels_autre+';'+qr.qr_comment_wheels+';'+qr.qr_lanceur_1+';'+qr.qr_lanceur_2+';'+qr.qr_lanceur_na+';'+qr.qr_comment_lanceur+';'+qr.qr_ramasseur+';'+qr.qr_comment_ramasseur+';'+qr.qr_grimpeur+';'+qr.qr_comment_grimpeur+';'+qr.qr_gears_pit+';'+qr.qr_comment_gears+';'+qr.qr_comment_general+';'+qr.qr_defenseur+';'+qr.qr_sans_commentaire+';'+qr.qr_comment_mode_auton+';'+qr.qr_nombre_balle+';'+qr.qr_pit_nom_scout" type-number="typeNumber" correction-level="correctionLevel" size="size" input-mode="inputMode" image="image"></qr>
+  </ion-content>
+</ion-view>
