@@ -118,6 +118,7 @@
         <span class="input-label">Nom du Scout : </span>
         <input type="text" placeholder=""  name="nom_scout" ng-model="qr.qr_nom_scout">
       </label>
+      <button id="matchScouting-button1" class="button button-dark  button-block" ui-sref="#/page1/codeMATCH">Générer le code QR !</button>
       <button ng-click="qr= {}; compteurH1 = 0; compteur_missH1 = 0; compteurH2 = 0; compteur_missH2 = 0; compteurGears = 0; compteurHoppers = 0; compteurSprint = 0; " id="matchScouting-button2" class="button button-assertive  button-block button-outline">Réinitialiser</button>
       <qr text="qr.qr_match+';'+qr.qr_numero_equipe+';'+qr.qr_couleur_alliance+';'+qr.qr_reach_automatique+';'+compteurH1+';'+compteur_missH1+';'+qr.qr_low_goals_0+';'+qr.qr_gears_automatique+';'+qr.qr_next_to_boiler+';'+qr.qr_next_to_retrieval+';'+qr.qr_neutral_zone+';'+compteurH2+';'+compteur_missH2+';'+qr.qr_low_goals+';'+compteurGears+';'+qr.qr_rope+';'+qr.qr_temps_pour_monter+';'+compteurSprint+';'+compteurHoppers+';'+qr.qr_defenseur+';'+qr.qr_mobilite+';'+qr.qr_comment_optionnel+';'+qr.qr_nom_scout" type-number="typeNumber" correction-level="correctionLevel" size="size" input-mode="inputMode" image="image"></qr>
     </form>
