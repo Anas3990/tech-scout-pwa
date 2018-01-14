@@ -1,7 +1,7 @@
 angular.module('app.controllers', ['ja.qr'])
      
 .controller('matchScoutingCtrl', ['$scope', '$stateParams',
-function ($scope, $stateParams, $ionicPopup) {
+function ($scope, $stateParams) {
   $scope.size = 250;
   $scope.correctionLevel = '';
   $scope.typeNumber = 0;
@@ -18,4 +18,3 @@ function ($scope, $stateParams) {
   $scope.image = true;
 
 }])
- 
